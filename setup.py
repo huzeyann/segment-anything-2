@@ -35,10 +35,10 @@ EXTRA_PACKAGES = {
 
 # By default, we also build the SAM 2 CUDA extension.
 # You may turn off CUDA build with `export SAM2_BUILD_CUDA=0`.
-BUILD_CUDA = os.getenv("SAM2_BUILD_CUDA", "1") == "1"
+BUILD_CUDA = os.getenv("SAM2_BUILD_CUDA", "0") == "1"
 # By default, we allow SAM 2 installation to proceed even with build errors.
 # You may force stopping on errors with `export SAM2_BUILD_ALLOW_ERRORS=0`.
-BUILD_ALLOW_ERRORS = os.getenv("SAM2_BUILD_ALLOW_ERRORS", "1") == "1"
+BUILD_ALLOW_ERRORS = os.getenv("SAM2_BUILD_ALLOW_ERRORS", "0") == "1"
 
 # Catch and skip errors during extension building and print a warning message
 # (note that this message only shows up under verbose build mode
